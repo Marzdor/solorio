@@ -16,6 +16,7 @@ class App extends Component {
     this.changePage = this.changePage.bind(this);
     this.handleNavClick = this.handleNavClick.bind(this);
   }
+
   changePage(name) {
     let page;
     switch (name) {

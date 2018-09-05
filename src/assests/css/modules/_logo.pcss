@@ -1,3 +1,19 @@
+#logo {
+  &-big {
+    @mixin atSmall {
+      display: none;
+    }
+    @mixin atLarge {
+      display: inline-block;
+    }
+  }
+  &-small {
+    @mixin atLarge {
+      display: none;
+    }
+  }
+}
+
 .logo {
   @mixin atSmall {
     content: $logoSmall;
@@ -12,6 +28,9 @@
     content: $logo;
     max-height: 200px;
     max-width: 200px;
+    height: 200px;
+    width: 200px;
+    margin: 0;
   }
   &-title {
     @mixin atSmall {
