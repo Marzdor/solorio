@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./App.css";
 import Header from "./assests/components/Header";
 import Home from "./assests/components/Home";
 import Menu from "./assests/components/Menu";
@@ -29,7 +28,7 @@ class App extends Component {
       case "About":
         page = <About />;
         break;
-      case "Contact Us":
+      case "Contact":
         page = <Contact />;
         break;
       default:

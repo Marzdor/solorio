@@ -1,11 +1,18 @@
 import React from "react";
-import logo from "../images/solorio-logo.png";
 
 const Header = props => {
   return (
-    <header>
-      <img src={logo} alt="Solorio Brewing CO. Logo" />
+    <header className="header-container">
+      <img className="logo" alt="Solorio Brewing CO. Logo" />
       <nav className="nav">
+        <div id="hidden" className="logo-container">
+          <img className="logo" alt="Solorio Brewing CO. Logo" />
+          <div className="logo-container-sub">
+            <h1 className="logo-title">Solorio Brewing Co.</h1>
+            <h3 className="logo-title-sub">EST. 2015</h3>
+            <h2 className="logo-title">Rancho Cucamonga</h2>
+          </div>
+        </div>
         <a className="nav-link" onClick={props.handleNavClick} href="#Home">
           Home
         </a>
@@ -16,7 +23,7 @@ const Header = props => {
           About
         </a>
         <a className="nav-link" onClick={props.handleNavClick} href="#Contact">
-          Contact Us
+          Contact
         </a>
       </nav>
     </header>
