@@ -11,31 +11,10 @@ class App extends Component {
     super(props);
     this.state = {
       page: "Home",
-      component: <Home />,
-      width: window.innerWidth,
-      height: window.innerHeight
+      component: <Home />
     };
     this.changePage = this.changePage.bind(this);
     this.handleNavClick = this.handleNavClick.bind(this);
-    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
-  }
-  componentDidMount() {
-    window.addEventListener("resize", this.updateWindowDimensions);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("resize", this.updateWindowDimensions);
-  }
-
-  updateWindowDimensions() {
-    this.setState(
-      { width: window.innerWidth, height: window.innerHeight },
-      () => {
-        if (this.state.width >= 600) {
-          document.querySelector("#video").height = "500px";
-        }
-      }
-    );
   }
 
   changePage(name) {
