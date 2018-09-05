@@ -3,9 +3,9 @@ import React from "react";
 const Header = props => {
   return (
     <header className="header-container">
-      <img className="logo" alt="Solorio Brewing CO. Logo" />
+      <img id="logo-big" className="logo" alt="Solorio Brewing CO. Logo" />
       <nav className="nav">
-        <div id="hidden" className="logo-container">
+        <div id="logo-small" className="logo-container">
           <img className="logo" alt="Solorio Brewing CO. Logo" />
           <div className="logo-container-sub">
             <h1 className="logo-title">Solorio Brewing Co.</h1>
