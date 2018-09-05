@@ -350,6 +350,13 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+@media (min-width: 320px) {
+
+body {
+    background-color: #000
+}
+  }
+
 input:focus,
 select:focus,
 textarea:focus,
@@ -363,6 +370,13 @@ a {
 }
 
 /* Colors */
+
+@media (min-width: 320px) {
+
+.header-container {
+      margin: 0 0 5px 0
+  }
+  }
 
 @media (min-width: 1024px) {
 
@@ -524,4 +538,31 @@ a {
         flex-direction: column;
         justify-content: center
     }
+  }
+
+@media (min-width: 320px) {
+
+.footer-container {
+      background-color: #9c1d24;
+      padding: 5px;
+      border: 5px solid #291d23
+  }
+  }
+
+@media (min-width: 1024px) {
+
+.footer-container {
+      margin: 0 auto;
+      width: 80%
+  }
+  }
+
+@media (min-width: 320px) {
+
+.footer-text {
+      color: #f4bd42;
+      font-size: 1rem;
+      text-align: center;
+      margin: 5px 0
+  }
   }
