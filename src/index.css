@@ -498,6 +498,47 @@ a {
 
 @media (min-width: 320px) {
 
+.about-container {
+      color: #f4bd42;
+      margin: 0 0 20px 0
+  }
+  }
+
+@media (min-width: 600px) {
+
+.about-container {
+      margin: 0 0 50px 0
+  }
+  }
+
+@media (min-width: 1024px) {
+
+.about-container {
+      width: 80%;
+      margin: 0 auto 50px auto
+  }
+  }
+
+@media (min-width: 320px) {
+
+.about-title {
+      text-align: center
+  }
+  }
+
+@media (min-width: 320px) {
+
+.about-text {
+      text-align: justify;
+      width: 90%;
+      margin: 0 auto;
+      text-indent: 20px;
+      line-height: 1.25
+  }
+  }
+
+@media (min-width: 320px) {
+
 #logo-big {
       display: none
   }
