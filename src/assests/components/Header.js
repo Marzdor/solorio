@@ -2,9 +2,10 @@ import React from "react";
 
 const Header = props => {
   return (
-    <header>
+    <header className="header-container">
+      <img className="logo" alt="Solorio Brewing CO. Logo" />
       <nav className="nav">
-        <div className="logo-container">
+        <div id="hidden" className="logo-container">
           <img className="logo" alt="Solorio Brewing CO. Logo" />
           <div className="logo-container-sub">
             <h1 className="logo-title">Solorio Brewing Co.</h1>
@@ -12,7 +13,6 @@ const Header = props => {
             <h2 className="logo-title">Rancho Cucamonga</h2>
           </div>
         </div>
-        <img id="hidden" className="logo" alt="Solorio Brewing CO. Logo" />
         <a className="nav-link" onClick={props.handleNavClick} href="#Home">
           Home
         </a>

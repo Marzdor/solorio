@@ -368,6 +368,14 @@ a {
 
 /* Colors */
 
+@media (min-width: 1024px) {
+
+.header-container {
+      width: 80%;
+      margin: 25px auto 75px auto
+  }
+  }
+
 @media (min-width: 320px) {
 
 .nav {
@@ -385,6 +393,16 @@ a {
 
 .nav {
     grid-template-columns: 50% repeat(4, 1fr)
+}
+  }
+
+@media (min-width: 1024px) {
+
+.nav {
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    padding-left: 50px;
+    margin: -100px 0 50px auto
 }
   }
 
@@ -411,8 +429,17 @@ a {
 @media (min-width: 600px) {
 
 .logo {
-    height: 75px;
-    width: 75px
+    max-height: 75px;
+    max-width: 75px
+}
+  }
+
+@media (min-width: 1024px) {
+
+.logo {
+    content: url("./assests/images/solorio-logo.svg");
+    max-height: 200px;
+    max-width: 200px
 }
   }
 

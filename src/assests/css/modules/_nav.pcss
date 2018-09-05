@@ -11,6 +11,12 @@
   @mixin atMedium {
     grid-template-columns: 50% repeat(4, 1fr);
   }
+  @mixin atLarge {
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    padding-left: 50px;
+    margin: -100px 0 50px auto;
+  }
   &-link {
     @mixin atSmall {
       padding: 10px 0;
