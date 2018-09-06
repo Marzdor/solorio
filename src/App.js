@@ -11,10 +11,18 @@ class App extends Component {
     super(props);
     this.state = {
       page: "Home",
-      component: <Home />
+      component: <Home />,
+      contact: {
+        name: "",
+        email: "",
+        subscribe: false,
+        subject: "",
+        message: ""
+      }
     };
     this.changePage = this.changePage.bind(this);
     this.handleNavClick = this.handleNavClick.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
   changePage(name) {
@@ -30,7 +38,13 @@ class App extends Component {
         page = <About />;
         break;
       case "Contact":
-        page = <Contact />;
+        page = (
+          <Contact
+            contact={this.state.contact}
+            handleChange={this.handleChange}
+            handleCheckClick={this.handleChange}
+          />
+        );
         break;
       default:
         console.log(name);
@@ -45,6 +59,38 @@ class App extends Component {
       component: newComponent
     });
   }
+
+  handleChange(e) {
+    let value = Object.assign({}, this.state.contact);
+    const target = e.target;
+    console.log(value);
+    switch (target.id.slice(5)) {
+      case "name":
+        value.name = target.value;
+        break;
+      case "email":
+        value.email = target.value;
+        break;
+      case "subject":
+        value.subject = target.value;
+        break;
+      case "message":
+        value.message = target.value;
+        break;
+      default:
+        value.subscribe = !this.state.contact.subscribe;
+    }
+    console.log(value);
+    this.setState({ contact: value }, () => {
+      const pageName = this.state.page;
+      const newComponent = this.changePage(pageName);
+      this.setState({
+        page: pageName,
+        component: newComponent
+      });
+    });
+  }
+
   render() {
     return (
       <article className="container">

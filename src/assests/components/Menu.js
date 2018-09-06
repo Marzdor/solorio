@@ -3,7 +3,6 @@ import beer from "../data/menu.json";
 
 const beerElements = [];
 for (let key in beer) {
-  console.log(key);
   beerElements.push(
     <div className="menu-container-beer" key={key}>
       <h2 className="menu-title">{beer[key].name}</h2>
