@@ -861,10 +861,27 @@ a {
 
 @media (min-width: 320px) {
 
+.footer-container-social {
+        width: 150px;
+        margin: 0 auto
+    }
+  }
+
+@media (min-width: 320px) {
+
 .footer-text {
       color: #f4bd42;
       font-size: 1rem;
       text-align: center;
       margin: 5px 0
+  }
+  }
+
+@media (min-width: 320px) {
+
+.footer-link {
+      color: #f4bd42;
+      font-size: 2rem;
+      padding: 0 10px
   }
   }
