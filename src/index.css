@@ -862,8 +862,19 @@ a {
 @media (min-width: 320px) {
 
 .footer-container-social {
-        width: 150px;
-        margin: 0 auto
+        margin: 0 auto;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(4, 1fr)
+    }
+  }
+
+@media (min-width: 600px) {
+
+.footer-container-social {
+        grid-template-columns: repeat(3, 1fr) 50%;
+        width: 320px
     }
   }
 
@@ -883,5 +894,17 @@ a {
       color: #f4bd42;
       font-size: 2rem;
       padding: 0 10px
+  }
+  }
+
+@media (min-width: 320px) {
+
+.footer-card {
+      font-size: 1.25rem;
+      font-weight: 900;
+      color: #9c1d24;
+      background-color: #f4bd42;
+      line-height: 1.5;
+      height: 30px
   }
   }
