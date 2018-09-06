@@ -390,7 +390,7 @@ a {
 
 .nav {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     align-items: center;
     text-align: center;
@@ -402,14 +402,14 @@ a {
 @media (min-width: 600px) {
 
 .nav {
-    grid-template-columns: 50% repeat(4, 1fr)
+    grid-template-columns: 50% repeat(3, 1fr)
 }
   }
 
 @media (min-width: 1024px) {
 
 .nav {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     width: 100%;
     padding-left: 150px;
     margin: -125px 0 50px auto

@@ -52,7 +52,7 @@ class App extends Component {
     return page;
   }
   handleNavClick(e) {
-    const pageName = e.target.innerHTML;
+    const pageName = e.target.href.replace(/.*#/, "");
     const newComponent = this.changePage(pageName);
     this.setState({
       page: pageName,
