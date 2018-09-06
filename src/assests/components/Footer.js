@@ -28,6 +28,14 @@ const Footer = props => {
         >
           <i className="fab fa-twitter-square" />
         </a>
+        <a
+          className="footer-link footer-card"
+          href="https://squareup.com/gift/0ZPJF0BD0D0XH/order"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          E-Gift Cards
+        </a>
       </div>
       <h3 className="footer-text">
         Copyright © Solorio Brewing Co., LLC | All Rights Reserved
